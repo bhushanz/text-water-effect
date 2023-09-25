@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Roboto+Condensed:ital,wght@1,700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #65647c;  
+}
+.overview{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform:translate(-50%,-50%);  
+}
+h1{
+    position: absolute;
+    font-size:64px;
+    transform: translate(-50%,-50%);
+    font-family: 'Oswald', sans-serif;
+}
+.overview h1:nth-child(1){
+     color: transparent;
+    -webkit-text-stroke:3px  rgb(18, 18, 18) ;
+}
+.overview h1:nth-child(2){
+    color: rgba(14, 172, 245, 0.753);
+    animation:animate 4s ease-in-out  infinite;
+}
+@keyframes animate{
+    0%,100%{
+        clip-path: polygon(1% 47%, 15% 42%, 25% 45%, 42% 51%, 56% 57%, 70% 59%, 84% 59%, 100% 51%, 100% 99%, 1% 99%);
+    }
+    50%{
+        clip-path: polygon(1% 51%, 16% 51%, 28% 56%, 42% 58%, 57% 51%, 73% 46%, 85% 45%, 100% 40%, 100% 99%, 1% 99%);
+    }
+}
